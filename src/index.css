@@ -170,9 +170,8 @@ body {
     border: none;
     user-select: none;
     outline: none;
-    background-color: rgba(48, 27, 27, 0.103);
+    background-color: red;
 }
-
 
 
 .FB-post-input:focus
