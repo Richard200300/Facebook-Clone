@@ -206,6 +206,101 @@ const Group = () => {
         active.classList.add("activeStory")
 
     }
+    function homeEnter() {
+        let active = document.querySelector('.Home-hover')
+        active.classList.add('block')
+    }
+
+    function homeLeave() {
+        let active = document.querySelector('.Home-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEnte() {
+        let active = document.querySelector('.profile-hover')
+        active.classList.add('block')
+    }
+
+    function homeleav() {
+        let active = document.querySelector('.profile-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEnt() {
+        let active = document.querySelector('.friends-hover')
+        active.classList.add('block')
+    }
+
+    function homelea() {
+        let active = document.querySelector('.friends-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEn() {
+        let active = document.querySelector('.recent-hover')
+        active.classList.add('block')
+    }
+
+    function homele() {
+        let active = document.querySelector('.recent-hover')
+        active.classList.remove('block')
+    }
+
+    function homeE() {
+        let active = document.querySelector('.group-hover')
+        active.classList.add('block')
+    }
+
+    function homel() {
+        let active = document.querySelector('.group-hover')
+        active.classList.remove('block')
+    }
+    function homeMe() {
+        let active = document.querySelector('.market-hover')
+        active.classList.add('block')
+    }
+
+    function homeMl() {
+        let active = document.querySelector('.market-hover')
+        active.classList.remove('block')
+    }
+    function homeWe() {
+        let active = document.querySelector('.watch-hover')
+        active.classList.add('block')
+    }
+
+    function homeWl() {
+        let active = document.querySelector('.watch-hover')
+        active.classList.remove('block')
+    }
+    function homeSe() {
+        let active = document.querySelector('.see-hover')
+        active.classList.add('block')
+    }
+
+    function homeSl() {
+        let active = document.querySelector('.see-hover')
+        active.classList.remove('block')
+    }
+    function homeSagm() {
+        let active = document.querySelector('.sag-hover')
+        active.classList.add('block')
+    }
+
+    function homeSagl() {
+        let active = document.querySelector('.sag-hover')
+        active.classList.remove('block')
+    }
+    function homeSasm() {
+        let active = document.querySelector('.sas-hover')
+        active.classList.add('block')
+    }
+
+    function homeSasl() {
+        let active = document.querySelector('.sas-hover')
+        active.classList.remove('block')
+    }
+
 
 
     return (
@@ -215,54 +310,58 @@ const Group = () => {
 
             <section className="group-main-flex" onLoad={check}>
                 <section className="group-fixed-bar" onLoad={checkdiscussion}>
-                    <article >
-                        {/* <article className="group-fixed-bar-icons">
+                    <article className="group-fixed-flex">
+                        <article className="group-fixed-bar-icons">
                             <ul>
-                                <li>home</li>
-                                <li>profile</li>
+                                <li onMouseEnter={homeEnter} onMouseLeave={homeLeave} >H</li><span className="Home-hover">Home</span>
+                                <li onMouseEnter={homeEnte} onMouseLeave={homeleav} ><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li><span className="profile-hover">Your profile</span>
                             </ul>
                             <ul>
-                                <li>friends</li>
-                                <li>Most Recents</li>
-                                <li>Groups</li>
-                                <li>Market Place</li>
-                                <li>watch</li>
-                                <li>See all</li>
+                                <li onMouseEnter={homeEnt} onMouseLeave={homelea} >f</li><span className="friends-hover">Friends</span>
+                                <li onMouseEnter={homeEn} onMouseLeave={homele} >M</li><span className="recent-hover">Most recent</span>
+                                <li onMouseEnter={homeE} onMouseLeave={homel} >G</li><span className="group-hover">Groups</span>
+                                <li onMouseEnter={homeMe} onMouseLeave={homeMl}>M</li><span className="market-hover">Market Place</span>
+                                <li onMouseEnter={homeWe} onMouseLeave={homeWl}>w</li><span className="watch-hover">Watch</span>
+                                <li onMouseEnter={homeSe} onMouseLeave={homeSl}>S</li><span className="see-hover">See all</span>
                             </ul>
                             <ul>
-                                <li>maria sharapova is the best</li>
-                                <li>maria sharapova is the best</li>
-                                <li>maria sharapova is the best</li>
-                                <li>See all groups</li>
+                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                                <li onMouseEnter={homeSagm} onMouseLeave={homeSagl}>S</li><span className="sag-hover">See all groups</span>
                             </ul>
                             <ul>
-                                <li>See all shortucts</li>
+                                <li onMouseEnter={homeSasm} onMouseLeave={homeSasl}>S</li><span className="sas-hover">See all shortcuts</span>
                             </ul>
 
-                        </article> */}
-                        <div className="group-flex-bar">
-                            <img src="kaley112.jpg" alt="kaley112.jpg" className="body-post-dp" />
+                        </article>
+                        <article>
+                            <div className="group-flex-bar">
+                                <img src="kaley112.jpg" alt="kaley112.jpg" className="body-post-dp" />
 
-                            <div className="group-fixed-name-container">
-                                <h1 className="group-fixed-name">The Home of Kaley Cuoco fans</h1>
-                                <p>Public group . <span className="underline"> 6.3k folowing</span></p>
+                                <div className="group-fixed-name-container">
+                                    <h1 className="group-fixed-name">The Home of Kaley Cuoco fans</h1>
+                                    <p>Public group . <span className="underline"> 6.3k folowing</span></p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group-fixed-btn-flex">
-                            <button onClick={checkfolow} className="follow-btn">{follow ? "Following" : "Follow"}</button>
-                            <div className="info-balls-container group-radius">
-                                <div className="info-balls"></div>
-                                <div className="info-balls"></div>
-                                <div className="info-balls"></div>
+                            <div className="group-fixed-btn-flex">
+                                <button onClick={checkfolow} className="follow-btn">{follow ? "Following" : "Follow"}</button>
+                                <div className="info-balls-container group-radius">
+                                    <div className="info-balls"></div>
+                                    <div className="info-balls"></div>
+                                    <div className="info-balls"></div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article>
-                        <ul className="group-fixed-menu">
-                            <li className="group-fixed-list btn-storie" onClick={activeStory}>Community home</li>
-                            <li className="group-fixed-list btn-Reel" onClick={activeReels}>Rooms</li>
-                            <li className="group-fixed-list btn-Room" onClick={activeRooms}>Events</li>
-                        </ul>
+
+                            <article>
+                                <ul className="group-fixed-menu">
+                                    <li className="group-fixed-list btn-storie" onClick={activeStory}>Community home</li>
+                                    <li className="group-fixed-list btn-Reel" onClick={activeReels}>Rooms</li>
+                                    <li className="group-fixed-list btn-Room" onClick={activeRooms}>Events</li>
+                                </ul>
+                            </article>
+                        </article>
                     </article>
                 </section>
 
@@ -291,8 +390,8 @@ const Group = () => {
                                 <li className="group-discussion-list reels" onClick={reels}>Reels</li>
                             </ul>
 
-                            <div>
-                                <div><p>iconnbx xjx</p></div>
+                            <div class="flex">
+                                <div><p>icon</p></div>
 
                                 <div className="group-balls-container">
                                     <div className="info-balls"></div>

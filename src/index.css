@@ -33,6 +33,7 @@ body {
     padding: 8px;
     border-radius: 19px;
     font-size: 17px;
+    outline: none;
     border: none;
     background-color: rgba(48, 27, 27, 0.103);
 }
@@ -170,15 +171,10 @@ body {
     border: none;
     user-select: none;
     outline: none;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.171);
 }
 
 
-.FB-post-input:focus
-
- {
-    border: none;
-}
 
 .post-container {
     margin: 20px;
@@ -190,8 +186,6 @@ body {
     height: 140px;
     border-radius: 10px;
     box-shadow: 0px 3px 4px 0px rgba(48, 27, 27, 0.3);
-
-
 }
 
 .post-flex {
@@ -310,7 +304,7 @@ body {
 
 }
 
-#close {
+Y #close {
     font-size: 36px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
@@ -576,6 +570,9 @@ body {
     background-color: rgba(0, 0, 0, 0.11);
     border: 1px solid rgba(0, 0, 0, 0.11);
     font-weight: bold;
+    padding-block: 7px;
+    position: relative;
+    bottom: -3px;
 }
 
 .follow-btn:hover {
@@ -635,6 +632,8 @@ body {
 .body-post-img-container {
     margin-right: -15px;
 }
+
+
 
 .body-post-container2 {
     padding: 0px 14px;
@@ -734,6 +733,7 @@ body {
 }
 
 .comment-input {
+    outline: none;
     width: 100%;
     font-size: 15px;
     color: #65676b;
@@ -743,10 +743,12 @@ body {
     border-style: none;
 }
 
+
+
 .comment-container {
     display: flex;
     gap: 4px;
-    
+
 }
 
 .commet1 {
@@ -935,11 +937,11 @@ body {
 
 .group-fixed-bar {
     padding-top: 90px;
-    padding-left: 20px;
+
     padding-right: 10px;
     height: 100vh;
     position: fixed;
-    width: 330px;
+    width: 350px;
     background-color: white;
     box-shadow: 0px 3px 4px 0px rgba(48, 27, 27, 0.3);
 
@@ -1012,6 +1014,7 @@ body {
 .group-fixed-btn-flex {
     display: flex;
     gap: 20px;
+    align-items: center;
     margin-block: 10px;
 }
 
@@ -1061,7 +1064,6 @@ body {
 
 .group-main-flex-section1 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -1149,6 +1151,7 @@ body {
 }
 
 .create-group-input {
+    outline: none;
     width: 100%;
     padding: 7px 14px;
     font-size: 17px;
@@ -1191,9 +1194,10 @@ body {
     font-weight: bold;
     background-color: #E4E6EB;
 }
+
 .learn-more-btn:hover {
     background-color: rgba(0, 0, 0, 0.13);
- 
+
 }
 
 
@@ -1253,17 +1257,19 @@ body {
 .group-popular-post-container ul {
     margin-block: 10px
 }
+
 .group-sticky-stop {
     position: sticky;
     top: -115px;
 }
+
 .groups-rooms-container {
     border-radius: 7px;
     box-shadow: 0px 2px 3px 0px rgba(48, 27, 27, 0.699);
     background-color: white;
     padding: 10px 17px;
     margin-bottom: 20px;
- 
+
 
 
 }
@@ -1273,13 +1279,13 @@ body {
     line-height: 1.3;
     font-size: 17px;
     color: #65676b;
- 
+
 }
 
 .groups-inner-rooms-container h2 {
     font-size: 20px;
     color: #65676b;
-  
+
 }
 
 .room-title {
@@ -1302,24 +1308,28 @@ body {
     border-radius: 6px;
     cursor: pointer;
 }
+
 .post-group-container {
     width: 100%;
     background-color: white;
     box-shadow: 0px 2px 3px 0px rgba(48, 27, 27, 0.699);
     border-radius: 7px;
     overflow: hidden;
+    margin-block: 20px;
 
 
 }
+
 .post-group-container1 {
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 8px;
-    
+
     line-height: 1.3;
-    
+
 }
-.group-username{
+
+.group-username {
     font-size: 15px;
     color: #050505;
     cursor: pointer;
@@ -1329,7 +1339,7 @@ body {
 
 .group-username-location {
     font-size: 13px;
-    color:#65676b;
+    color: #65676b;
 }
 
 .group-post-img {
@@ -1338,39 +1348,47 @@ body {
     max-height: 80vh;
     object-position: top;
 }
+
 .recent-media-container {
     background-color: white;
     padding: 3px 14px;
     box-shadow: 0px 2px 3px 0px rgba(48, 27, 27, 0.164);
     border-radius: 9px;
 }
+
 .recent-media-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 5px;
     margin-bottom: 6px;
 }
+
 .grid-photos {
     width: 100%;
     height: 25vh;
-    object-fit:cover;
+    object-fit: cover;
     object-position: top;
-    
+
 }
+
 .recent-media-container h2 {
-font-size: 17px;
-color: #050505;
-margin-block: 7px;
+    font-size: 17px;
+    color: #050505;
+    margin-block: 7px;
 }
+
 .cg1 {
     border-radius: 6px 0px 0px 0px;
 }
+
 .cg2 {
     border-radius: 0px 6px 0px 0px;
 }
+
 .cg3 {
     border-radius: 0px 0px 0px 6px;
 }
+
 .cg4 {
     border-radius: 0px 0px 6px 0px;
 }
@@ -1378,4 +1396,98 @@ margin-block: 7px;
 .space {
     padding: 8px 15px;
     margin-block: 6px;
+}
+
+.group-fixed-bar-icons {
+    height: 100vh;
+    padding: 3px 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.group-fixed-bar-icons ul {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    margin-bottom: 15px;
+}
+
+.group-fixed-bar-icons ul li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 4px;
+    text-align: center;
+    margin-block: 10px;
+    border-radius: 4px;
+
+}
+
+.group-fixed-bar-icons ul li:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+.group-fixed-flex {
+    display: flex;
+    gap: 13px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Home-hover,
+.profile-hover,
+.friends-hover,
+.recent-hover,
+.group-hover,
+.market-hover,
+.watch-hover,
+.see-hover,
+.sag-hover,
+.sas-hover{
+    position: fixed;
+    left: 65px;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.171);
+    background-color: #050505;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    top: 103px;
+    font-size: 15px;
+    z-index: 1;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+
+.profile-hover {
+    top: 146px;
+
+}
+.friends-hover {
+    top: 207px;
+}
+.recent-hover {
+    top: 245px;
+}
+.group-hover {
+    top: 279px;
+}
+.market-hover {
+    top: 315px;
+}
+.watch-hover {
+
+    top: 353px;
+}
+.see-hover{
+    top: 386px;
+}
+.sag-hover {
+    top: 648px;
+}
+.sas-hover {
+
+    top: 700px;
+}
+.block {
+    opacity: 1;
 }
