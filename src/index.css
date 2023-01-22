@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -695,6 +696,7 @@ Y #close {
 .body-post-group-name {
     font-size: 16px;
     cursor: pointer;
+
     color: #050505;
 
 
@@ -941,7 +943,7 @@ Y #close {
     padding-right: 10px;
     height: 100vh;
     position: fixed;
-    width: 350px;
+    width: 390px;
     background-color: white;
     box-shadow: 0px 3px 4px 0px rgba(48, 27, 27, 0.3);
 
@@ -953,7 +955,8 @@ Y #close {
 
 .group-fixed-name {
     font-size: 17px;
-    color: #050505;
+    font-weight: medium;
+    color: #050505b2;
 }
 
 .underline {
@@ -971,9 +974,9 @@ Y #close {
 }
 
 .group-main-section {
-    width: 1290px;
+
     margin-top: 70px;
-    margin-left: 330px;
+    margin-left: 320px;
 
 }
 
@@ -1073,6 +1076,7 @@ Y #close {
     align-items: center;
     background-color: white;
     margin-top: 30px;
+    font-weight: 100;
     border-top: 1px solid rgba(0, 0, 0, 0.192);
 
 }
@@ -1085,6 +1089,7 @@ Y #close {
 .group-discussion-list {
     list-style-type: none;
     padding: 15px 12px;
+    color: #65676baf;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
@@ -1400,7 +1405,8 @@ Y #close {
 
 .group-fixed-bar-icons {
     height: 100vh;
-    padding: 3px 10px;
+    position: fixed;
+    padding-right: 10px;
     border-right: 1px solid rgba(0, 0, 0, 0.171);
 }
 
@@ -1415,6 +1421,7 @@ Y #close {
     padding: 4px;
     text-align: center;
     margin-block: 10px;
+    margin-left: 10px;
     border-radius: 4px;
 
 }
@@ -1443,7 +1450,7 @@ Y #close {
 .watch-hover,
 .see-hover,
 .sag-hover,
-.sas-hover{
+.sas-hover {
     position: fixed;
     left: 65px;
     box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.171);
@@ -1462,32 +1469,130 @@ Y #close {
     top: 146px;
 
 }
+
 .friends-hover {
     top: 207px;
 }
+
 .recent-hover {
     top: 245px;
 }
+
+.bordleft {
+    padding: 2px;
+
+    position: relative;
+    left: 0px;
+    height: 40px;
+    width: 5px;
+    background-color: blue;
+    border-radius: 0px 15px 15px 0px;
+    top: -476px;
+}
+
+.borderh {
+    top: -653px;
+}
+
+.borderp {
+    top: -610px;
+}
+
+.borderf {
+    top: -550px;
+}
+
+.bordermr {
+    top: -515px;
+}
+
+.borderg {
+    top: -476px;
+}
+
+.bordermp {
+    top: -443px;
+}
+
+.borderw {
+    top: -407px;
+}
+
+.bordersa {
+    top: -370px;
+
+}
+
+
+.bordersag {
+    top: -110px;
+}
+
+.bordersas {
+    top: -60px;
+}
+
 .group-hover {
     top: 279px;
+
 }
+
 .market-hover {
     top: 315px;
 }
+
 .watch-hover {
 
     top: 353px;
 }
-.see-hover{
+
+.see-hover {
     top: 386px;
 }
+
 .sag-hover {
     top: 648px;
 }
+
 .sas-hover {
 
     top: 700px;
 }
+
 .block {
     opacity: 1;
+}
+.group-main-bar {
+   
+    margin-left: 70px;
+}
+/* --------smaller-screen----------- */
+
+@media (max-width: 1000px) {
+    .group-fixed-bar {
+        width: 58px;
+        overflow: hidden;
+    }
+
+    .group-fixed-bar-icons {
+        display: block;
+    }
+
+    .group-main-section {
+        margin: unset;
+    }
+
+    .group-fixed-flex {
+        display: block;
+    }
+    .group-side-container {
+        display: none;
+    }
+    .group-main-dp  {
+        height:45vh;
+    }
+    .group-name {
+        width: 250px;
+    }
+ 
 }

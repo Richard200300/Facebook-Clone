@@ -301,8 +301,137 @@ const Group = () => {
         active.classList.remove('block')
     }
 
+    function borderh() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderh')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderp')
+        active.classList.remove('borderf')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+    }
+    function borderg() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderg')
+        active.classList.remove('borderw')
+        active.classList.remove('borderh')
+        active.classList.remove('borderp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderf')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersas')
+    }
+    function borderp() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderw')
+        active.classList.remove('borderf')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersas')
+    }
+    function borderf() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderf')
+        active.classList.remove('bordersag')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersas')
 
+    }
+    function bordmr() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
 
+    }
+    function bordmp() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordermp')
+        active.classList.remove('bordersas')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+    }
+    function bordw() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+
+    }
+    function bordsa() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderg')
+        active.classList.remove('bordersag')
+        active.classList.remove('borderh')
+    }
+    function bordsag() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersag')
+        active.classList.remove('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+    }
+    function bordsas() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersas')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+    }
     return (
         <>
 
@@ -310,33 +439,36 @@ const Group = () => {
 
             <section className="group-main-flex" onLoad={check}>
                 <section className="group-fixed-bar" onLoad={checkdiscussion}>
-                    <article className="group-fixed-flex">
-                        <article className="group-fixed-bar-icons">
-                            <ul>
-                                <li onMouseEnter={homeEnter} onMouseLeave={homeLeave} >H</li><span className="Home-hover">Home</span>
-                                <li onMouseEnter={homeEnte} onMouseLeave={homeleav} ><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li><span className="profile-hover">Your profile</span>
-                            </ul>
-                            <ul>
-                                <li onMouseEnter={homeEnt} onMouseLeave={homelea} >f</li><span className="friends-hover">Friends</span>
-                                <li onMouseEnter={homeEn} onMouseLeave={homele} >M</li><span className="recent-hover">Most recent</span>
-                                <li onMouseEnter={homeE} onMouseLeave={homel} >G</li><span className="group-hover">Groups</span>
-                                <li onMouseEnter={homeMe} onMouseLeave={homeMl}>M</li><span className="market-hover">Market Place</span>
-                                <li onMouseEnter={homeWe} onMouseLeave={homeWl}>w</li><span className="watch-hover">Watch</span>
-                                <li onMouseEnter={homeSe} onMouseLeave={homeSl}>S</li><span className="see-hover">See all</span>
-                            </ul>
-                            <ul>
-                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
-                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
-                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
-                                <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
-                                <li onMouseEnter={homeSagm} onMouseLeave={homeSagl}>S</li><span className="sag-hover">See all groups</span>
-                            </ul>
-                            <ul>
-                                <li onMouseEnter={homeSasm} onMouseLeave={homeSasl}>S</li><span className="sas-hover">See all shortcuts</span>
-                            </ul>
+                    <article className="group-fixed-bar-icons">
+                        <ul>
+                            <li onMouseEnter={homeEnter} onMouseLeave={homeLeave} onClick={borderh} >H</li><span className="Home-hover">Home</span>
+                            <li onMouseEnter={homeEnte} onMouseLeave={homeleav} onClick={borderp} ><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li><span className="profile-hover">Your profile</span>
+                        </ul>
+                        <ul>
+                            <li onMouseEnter={homeEnt} onMouseLeave={homelea} onClick={borderf} >f</li><span className="friends-hover">Friends</span>
+                            <li onMouseEnter={homeEn} onMouseLeave={homele} onClick={bordmr} >M</li><span className="recent-hover">Most recent</span>
+                            <li onClick={borderg} onMouseEnter={homeE} onMouseLeave={homel} className="group-btn">G</li><span className="group-hover">Groups</span>
+                            <li onClick={bordmp} onMouseEnter={homeMe} onMouseLeave={homeMl}>M</li><span className="market-hover">Market Place</span>
+                            <li onClick={bordw} onMouseEnter={homeWe} onMouseLeave={homeWl}>w</li><span className="watch-hover">Watch</span>
+                            <li onClick={bordsa} onMouseEnter={homeSe} onMouseLeave={homeSl}>S</li><span className="see-hover">See all</span>
+                        </ul>
+                        <ul>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li onClick={bordsag} onMouseEnter={homeSagm} onMouseLeave={homeSagl}>S</li><span className="sag-hover">See all groups</span>
+                        </ul>
+                        <ul>
 
-                        </article>
-                        <article>
+                            <li onClick={bordsas} onMouseEnter={homeSasm} onMouseLeave={homeSasl}>S</li><span className="sas-hover">See all shortcuts</span>
+                        </ul>
+                        <div className="bordleft"></div>
+
+                    </article>
+                    <article className="group-fixed-flex">
+
+                        <article className="group-main-bar">
                             <div className="group-flex-bar">
                                 <img src="kaley112.jpg" alt="kaley112.jpg" className="body-post-dp" />
 
@@ -374,9 +506,10 @@ const Group = () => {
                     </div>
                     <article className="group-main-section1">
                         <article className="group-main-flex-section1">
-                            <a className="group-name" href="#">The Home of Kaley Cuoco Fans</a>
-                            <div>
+                            <a className="group-name" href="#">The Home of Kaley Cuoco fans</a>
+                            <div class="flex">
                                 <button className="group-invite-btn" >+   Invite</button>
+                                <div>icon</div>
                             </div>
                         </article>
 

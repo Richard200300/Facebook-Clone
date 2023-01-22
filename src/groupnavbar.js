@@ -35,7 +35,12 @@ const Gnavbar = () => {
 
         <section>
             <nav className="navbar" >
-                <h2 className="FB-logo">Facebook</h2>
+                <div className="flex">
+                <h2 className="FB-logo">facebook</h2>
+                <p>ICon</p>
+                    
+                </div>
+             
               
 
                 <div className="FB-nav-icons">
