@@ -48,6 +48,234 @@ const userinfo = {
         let show = document.querySelector('.frined-container')
         show.classList.remove("scroll")
     }
+
+
+    function homeEnter() {
+        let active = document.querySelector('.Home-hover')
+        active.classList.add('block')
+    }
+
+    function homeLeave() {
+        let active = document.querySelector('.Home-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEnte() {
+        let active = document.querySelector('.profile-hover')
+        active.classList.add('block')
+    }
+
+    function homeleav() {
+        let active = document.querySelector('.profile-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEnt() {
+        let active = document.querySelector('.friends-hover')
+        active.classList.add('block')
+    }
+
+    function homelea() {
+        let active = document.querySelector('.friends-hover')
+        active.classList.remove('block')
+    }
+
+    function homeEn() {
+        let active = document.querySelector('.recent-hover')
+        active.classList.add('block')
+    }
+
+    function homele() {
+        let active = document.querySelector('.recent-hover')
+        active.classList.remove('block')
+    }
+
+    function homeE() {
+        let active = document.querySelector('.group-hover')
+        active.classList.add('block')
+    }
+
+    function homel() {
+        let active = document.querySelector('.group-hover')
+        active.classList.remove('block')
+    }
+    function homeMe() {
+        let active = document.querySelector('.market-hover')
+        active.classList.add('block')
+    }
+
+    function homeMl() {
+        let active = document.querySelector('.market-hover')
+        active.classList.remove('block')
+    }
+    function homeWe() {
+        let active = document.querySelector('.watch-hover')
+        active.classList.add('block')
+    }
+
+    function homeWl() {
+        let active = document.querySelector('.watch-hover')
+        active.classList.remove('block')
+    }
+    function homeSe() {
+        let active = document.querySelector('.see-hover')
+        active.classList.add('block')
+    }
+
+    function homeSl() {
+        let active = document.querySelector('.see-hover')
+        active.classList.remove('block')
+    }
+    function homeSagm() {
+        let active = document.querySelector('.sag-hover')
+        active.classList.add('block')
+    }
+
+    function homeSagl() {
+        let active = document.querySelector('.sag-hover')
+        active.classList.remove('block')
+    }
+    function homeSasm() {
+        let active = document.querySelector('.sas-hover')
+        active.classList.add('block')
+    }
+
+    function homeSasl() {
+        let active = document.querySelector('.sas-hover')
+        active.classList.remove('block')
+    }
+
+    function borderh() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderh')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderp')
+        active.classList.remove('borderf')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+    }
+    function borderg() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderg')
+        active.classList.remove('borderw')
+        active.classList.remove('borderh')
+        active.classList.remove('borderp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderf')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersas')
+    }
+    function borderp() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderw')
+        active.classList.remove('borderf')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersas')
+    }
+    function borderf() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderf')
+        active.classList.remove('bordersag')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersas')
+
+    }
+    function bordmr() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordermp')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+
+    }
+    function bordmp() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordermp')
+        active.classList.remove('bordersas')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('borderw')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+    }
+    function bordw() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+        active.classList.remove('bordersa')
+        active.classList.remove('bordersag')
+
+    }
+    function bordsa() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderg')
+        active.classList.remove('bordersag')
+        active.classList.remove('borderh')
+    }
+    function bordsag() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersag')
+        active.classList.remove('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('bordersas')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+    }
+    function bordsas() {
+        let active = document.querySelector('.bordleft')
+        active.classList.add('bordersas')
+        active.classList.remove('bordersag')
+        active.classList.remove('bordersa')
+        active.classList.remove('borderw')
+        active.classList.remove('bordermp')
+        active.classList.remove('bordermr')
+        active.classList.remove('borderf')
+        active.classList.remove('borderp')
+        active.classList.remove('borderg')
+        active.classList.remove('borderh')
+    }
     return (
         <>
             <Navbar mainuserimage={userinfo.image}/>
@@ -56,7 +284,33 @@ const userinfo = {
 
                 <Story mainuserimage={userinfo.image}/>
  
-             
+                <article className="fb-fixed-bar-icons">
+                        <ul>
+                            <li onMouseEnter={homeEnter} onMouseLeave={homeLeave} onClick={borderh} >H</li><span className="Home-hover">Home</span>
+                            <li onMouseEnter={homeEnte} onMouseLeave={homeleav} onClick={borderp} ><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li><span className="profile-hover">Your profile</span>
+                        </ul>
+                        <ul>
+                            <li onMouseEnter={homeEnt} onMouseLeave={homelea} onClick={borderf} >f</li><span className="friends-hover">Friends</span>
+                            <li onMouseEnter={homeEn} onMouseLeave={homele} onClick={bordmr} >M</li><span className="recent-hover">Most recent</span>
+                            <li onClick={borderg} onMouseEnter={homeE} onMouseLeave={homel} className="group-btn">G</li><span className="group-hover">Groups</span>
+                            <li onClick={bordmp} onMouseEnter={homeMe} onMouseLeave={homeMl}>M</li><span className="market-hover">Market Place</span>
+                            <li onClick={bordw} onMouseEnter={homeWe} onMouseLeave={homeWl}>w</li><span className="watch-hover">Watch</span>
+                            <li onClick={bordsa} onMouseEnter={homeSe} onMouseLeave={homeSl}>S</li><span className="see-hover">See all</span>
+                        </ul>
+                        <ul>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li><img src="Dabi.jpg" alt="dabi.jpg" className="comment-dp" /></li>
+                            <li onClick={bordsag} onMouseEnter={homeSagm} onMouseLeave={homeSagl}>S</li><span className="sag-hover">See all groups</span>
+                        </ul>
+                        <ul>
+
+                            <li onClick={bordsas} onMouseEnter={homeSasm} onMouseLeave={homeSasl}>S</li><span className="sas-hover">See all shortcuts</span>
+                        </ul>
+                        <div className="bordleft"></div>
+
+                    </article>
 
                 <section className="groups-container" onMouseOver={clicky} onMouseLeave={removeClicky}>
                     <ul className="groups-section-1">

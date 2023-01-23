@@ -35,7 +35,7 @@ const Navbar = ({mainuserimage}) => {
 
         <section>
             <nav className="navbar" >
-                <h2 className="FB-logo">Facebook</h2>
+                <h2 className="FB-logo">facebook</h2>
                 <label>
                     <input type="text" placeholder="Search Facebook" className="FB-main-search" />
                 </label>

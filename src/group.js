@@ -558,7 +558,7 @@ const Group = () => {
                                         <div className="group-featured-flex">
                                             <img src="dabi.jpg" alt="dabi.jpg" className="pj-post-dp" />
                                             <div>
-                                                <p>Hollywiid Diva & Hottest Queens</p>
+                                                <p>Hollywood Diva & Hottest Queens</p>
                                                 <a>3 january at 13:01</a>
 
                                             </div>

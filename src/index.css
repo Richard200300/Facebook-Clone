@@ -25,7 +25,10 @@ body {
 }
 
 .FB-logo {
+    color: #1876F2;
     cursor: pointer;
+    position: relative;
+    right: 20px;
     font-weight: bold;
 }
 
@@ -92,7 +95,7 @@ body {
 .home-container {
     margin: 110px auto;
 
-    width: 530px;
+    width: 600px;
     position: relative;
     right: 20px;
     border-radius: 10px;
@@ -1129,6 +1132,8 @@ Y #close {
     padding: 10px 20px;
     background-color: white;
     border-radius: 7px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.37);
+
 }
 
 .group-container {
@@ -1217,6 +1222,7 @@ Y #close {
     border-radius: 7px;
     padding: 10px 14px;
 
+
 }
 
 .group-featured-title {
@@ -1225,7 +1231,7 @@ Y #close {
 }
 
 .group-featured-box {
-    box-shadow: 0px 2px 3px 0px rgba(48, 27, 27, 0.699);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.699);
     background-color: white;
     width: 260px;
     padding: 10px 12px;
@@ -1233,6 +1239,12 @@ Y #close {
     padding-bottom: 80px;
     border-radius: 7px;
     margin-block: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.group-featured-box:hover {
+    background-color: rgba(0, 0, 0, 0.11);
 }
 
 .group-featured-flex {
@@ -1406,6 +1418,7 @@ Y #close {
 .group-fixed-bar-icons {
     height: 100vh;
     position: fixed;
+    background-color: white;
     padding-right: 10px;
     border-right: 1px solid rgba(0, 0, 0, 0.171);
 }
@@ -1487,39 +1500,39 @@ Y #close {
     width: 5px;
     background-color: blue;
     border-radius: 0px 15px 15px 0px;
-    top: -476px;
+    top: -496px;
 }
 
 .borderh {
-    top: -653px;
+    top: -680px;
 }
 
 .borderp {
-    top: -610px;
+    top: -635px;
 }
 
 .borderf {
-    top: -550px;
+    top: -573px;
 }
 
 .bordermr {
-    top: -515px;
+    top: -534px;
 }
 
 .borderg {
-    top: -476px;
+    top: -496px;
 }
 
 .bordermp {
-    top: -443px;
+    top: -456px;
 }
 
 .borderw {
-    top: -407px;
+    top: -417px;
 }
 
 .bordersa {
-    top: -370px;
+    top: -375px;
 
 }
 
@@ -1562,10 +1575,15 @@ Y #close {
 .block {
     opacity: 1;
 }
+
 .group-main-bar {
-   
+
     margin-left: 70px;
 }
+.fb-fixed-bar-icons {
+    display: none;
+}
+
 /* --------smaller-screen----------- */
 
 @media (max-width: 1000px) {
@@ -1585,14 +1603,64 @@ Y #close {
     .group-fixed-flex {
         display: block;
     }
+
     .group-side-container {
         display: none;
     }
-    .group-main-dp  {
-        height:45vh;
+
+    .group-main-dp {
+        height: 45vh;
     }
+
     .group-name {
         width: 250px;
     }
- 
+
+    .groups-container {
+        display: none;
+    }
+
+    .frined-container {
+        display: none;
+    }
+
+    .home-container {
+        margin-left: 140px;
+        width: 600px;
+    }
+
+    .fb-fixed-bar-icons {
+        display: block;
+        height: 100vh;
+        top: 70px;
+        list-style: none;
+        left: 0px;
+        position: fixed;
+        padding-top: 23px;
+        background-color: white;
+        padding-right: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.171);
+    }
+
+
+    .fb-fixed-bar-icons ul {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+        margin-bottom: 15px;
+    }
+
+    .fb-fixed-bar-icons ul li {
+        list-style-type: none;
+        cursor: pointer;
+        padding: 4px;
+        text-align: center;
+        margin-block: 10px;
+        margin-left: 10px;
+        border-radius: 4px;
+
+    }
+
+    .fb-fixed-bar-icons ul li:hover {
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+
 }
